@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- Burger Image (Now properly centered) -->
+    <ImageView
+        android:id="@+id/burgerImage"
+        android:layout_width="272dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wasbiimage" />
+
+    <!-- Burger Name -->
+    <TextView
+        android:id="@+id/burgerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calistoga"
+        android:text="wasabi Ice Cream"
+        android:textColor="#F903AC"
+        android:textSize="22sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burgerImage" />
+
+    <!-- Rating Bar -->
+    <RatingBar
+        android:id="@+id/burgerRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burgerName" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/burgerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/calistoga"
+        android:text="Price: $7.99"
+        android:textColor="#F903AC"
+        android:textSize="18sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burgerRating" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/burgerDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="A daring fusion of creamy sweetness and a fiery wasabi kick! Smooth, rich, and refreshingly spicy—perfect for adventurous taste buds. Dare to take a bite? 🌶️🍦🔥."
+        android:textColor="#34495e"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burgerPrice" />
+
+    <!-- Add to Cart Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addToCartButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F903AC"
+        android:fontFamily="@font/allerta"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burgerDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
