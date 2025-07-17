@@ -1,4 +1,4 @@
-# 🍨 Baskin Robbins Mobile A
+# 🍨 Baskin Robbins Mobile App
 
 A modern and user-friendly Android mobile app for the Baskin Robbins ice cream store. This app allows users to explore delicious ice cream flavors, view offers, and place orders easily from their mobile devices.
 
